@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://hnmtbv83huhf"]
+
+[ext_resource type="Script" uid="uid://ka2dmi0rmeo7" path="res://scripts/time_system.gd" id="1_nnsk1"]
+[ext_resource type="Script" uid="uid://hgio1u6najkc" path="res://scripts/date_time.gd" id="2_rwgxs"]
+
+[sub_resource type="Resource" id="Resource_4wyf3"]
+script = ExtResource("2_rwgxs")
+seconds = 0
+minutes = 0
+hours = 0
+days = 1
+months = 1
+years = 2021
+metadata/_custom_type_script = "uid://hgio1u6najkc"
+
+[node name="world" type="Node3D"]
+
+[node name="TimeSystem" type="Node" parent="."]
+script = ExtResource("1_nnsk1")
+date_time = SubResource("Resource_4wyf3")
+metadata/_custom_type_script = "uid://ka2dmi0rmeo7"
